@@ -1,0 +1,46 @@
+name: flye-assembly
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Core assembly tools
+  - flye>=2.9
+  
+  # Read mapping and alignment
+  - minimap2>=2.17
+  - samtools>=1.15
+  
+  # Polishing tools
+  - racon>=1.5.0
+  - medaka>=1.7.0
+  
+  # Quality assessment
+  - quast>=5.0.2
+  
+  # Sequence processing
+  - seqtk>=1.3
+  
+  # General utilities
+  - python>=3.8
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  
+  # System tools
+  - gzip
+  - parallel
+  
+  # Optional: additional QC tools
+  - fastqc>=0.11.9
+  - multiqc>=1.12
+  
+  # Python packages for custom scripts
+  - biopython>=1.79
+  - click>=8.0
+  - pyyaml>=6.0
+  
+  # Optional: visualization
+  - plotly>=5.0
+  - seaborn>=0.11
