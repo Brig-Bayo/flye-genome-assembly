@@ -1,0 +1,20 @@
+# Sample configuration file for batch Flye assembly
+# Format: sample_name	input_file	read_type	genome_size
+# Lines starting with # are comments and will be ignored
+
+# Bacterial genomes
+ecoli_sample1	/path/to/ecoli_nanopore.fastq	nanopore	5m
+bacillus_sample2	/path/to/bacillus_pacbio.fastq	pacbio	4.2m
+staph_sample3	/path/to/staph_nanopore.fastq	nanopore	2.8m
+
+# Fungal genomes
+yeast_sample1	/path/to/yeast_hifi.fastq	pacbio-hifi	12m
+aspergillus_sample2	/path/to/aspergillus_nanopore.fastq	nanopore	35m
+
+# Plant genomes
+arabidopsis_sample1	/path/to/arabidopsis_hifi.fastq	pacbio-hifi	135m
+tomato_sample2	/path/to/tomato_nanopore.fastq	nanopore	950m
+
+# Mammalian genomes (examples)
+mouse_sample1	/path/to/mouse_hifi.fastq	pacbio-hifi	2.7g
+human_sample1	/path/to/human_nanopore.fastq	nanopore	3.2g
